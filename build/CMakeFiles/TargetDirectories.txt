@@ -1,4 +1,0 @@
-C:/Blackjack/build/CMakeFiles/BJ_Func.dir
-C:/Blackjack/build/CMakeFiles/Blackjack.dir
-C:/Blackjack/build/CMakeFiles/ALL_BUILD.dir
-C:/Blackjack/build/CMakeFiles/ZERO_CHECK.dir
