@@ -15,18 +15,8 @@ find_package(glfw3 REQUIRED)
 
 add_executable(Blackjack ${SOURCES_EXE})
 
-# target_link_libraries(BJ_Func PRIVATE raylib)
-
-# target_link_libraries(Blackjack PRIVATE BJ_Func PRIVATE raylib)
-
-# find_package(raylib REQUIRED)
-
-
-
-
 set(LINUX_LIBS m pthread dl rt X11)
 
 target_link_libraries(BJ_Func PRIVATE raylib)
 target_link_libraries(Blackjack PRIVATE BJ_Func PRIVATE raylib glfw)
-# target_link_libraries(Blackjack PRIVATE BJ_Func PRIVATE raylib ${LINUX_LIBS})
 
