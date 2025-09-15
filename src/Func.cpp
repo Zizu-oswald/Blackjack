@@ -2,7 +2,7 @@
 
 void fillTheDeck(std::array<Card, 52> &deck){
     int ii{0};
-    Image card = LoadImage("cards.png");
+    Image card = LoadImage("../assets/cards.png");
     for (int i = 0; i < deck.size() + 3; i++){
         if (i % 14 != 13){
             float x = (float)((int)(i % 14 * (float)card.width / 14.0f));

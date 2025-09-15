@@ -6,23 +6,23 @@ int main (){
     InitWindow(screenWidth, screenHidth, "Blackjack");
 
     // Текстуры
-    Image bicycleIm = LoadImage("bicycle.png");
+    Image bicycleIm = LoadImage("../assets/bicycle.png");
     ImageResize(&bicycleIm, 120, 180);
     Texture2D bicycle = LoadTextureFromImage(bicycleIm);
     UnloadImage(bicycleIm);
 
-    Image deckIm = LoadImage("deck.png");
+    Image deckIm = LoadImage("../assets/deck.png");
     ImageResize(&deckIm, 129, 200);
     Texture2D deckTexture = LoadTextureFromImage(deckIm);
     UnloadImage(deckIm);
     
-    Image stolIm = LoadImage("Stol.jpg");
+    Image stolIm = LoadImage("../assets/Stol.jpg");
     ImageResize(&stolIm, screenWidth, screenHidth);
     Texture2D stol = LoadTextureFromImage(stolIm);
     UnloadImage(stolIm);
 
     // Шрифт
-    Font font = LoadFontEx("Montserrat-Regular.ttf", 100, 0, 500);
+    Font font = LoadFontEx("../assets/Montserrat-Regular.ttf", 100, 0, 500);
     
     // Колода
     std::array<Card, 52> deck;
