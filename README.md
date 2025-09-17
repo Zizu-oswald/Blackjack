@@ -78,4 +78,7 @@ Tap `R` to restart distribution
 
 ---
 
+![Screenshot_1](./assets/screenshots/ScSh1.png)
+
+![Screenshot_2](./assets/screenshots/ScSh2.png)
 
