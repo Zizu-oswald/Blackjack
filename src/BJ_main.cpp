@@ -113,6 +113,7 @@ int main (){
         else{
             pos_Diler.setPositions(hand_Diler);
         }
+        // const char *t = "bet";
 //-----------------------------------------------------------------------------------------------------------------
         BeginDrawing();
 
@@ -120,7 +121,7 @@ int main (){
         DrawTexture(stol, 0, 0, WHITE);
         DrawTexture(deckTexture, screenWidth - 100, 0, WHITE);
         // DrawRectangleRec(greyRec, Fade(BLACK, 0.6f));
-
+        
         std::string str = "Bank: ";
         str += std::to_string(bank);
         DrawTextEx(font, str.data(), Vector2{0, 0}, 100, 3, WHITE);
@@ -129,11 +130,12 @@ int main (){
             strBet += std::to_string(bet);
             DrawTextEx(font, strBet.data(), Vector2{0, 110}, 100, 3, WHITE);
         }
-
+        
         if (status == statusOfGame::PLAYER_TAKING){
             DrawRectangleRec(redRec, RED);
             DrawRectangleRec(greenRec, GREEN);
-
+            DrawTextEx(font, "Stop", Vector2{redRec.x, redRec.y + 20}, 170, 3, WHITE);
+            DrawTextEx(font, "Take", Vector2{greenRec.x, greenRec.y + 20}, 170, 3, WHITE);
         }
 
         if (!hand_Diler.empty()){
