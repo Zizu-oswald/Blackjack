@@ -69,4 +69,13 @@ While in the `build/` folder:
 
 The game should launch and correctly load all assets.
 
+---
+### 6. Playing the game
+
+At the beginning of the game, enter your bank and bet.
+
+Tap `R` to restart distribution
+
+---
+
 
